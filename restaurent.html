@@ -1,0 +1,377 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Food Haven Restaurant</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Georgia, serif;
+            background-color: #fffaf3;
+            color: #3b2a20;
+        }
+
+        /* Header */
+        header {
+            background-color: #3b2a20;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        header h1 {
+            font-size: 35px;
+            margin-bottom: 8px;
+        }
+
+        /* Navigation */
+        nav {
+            background-color: #6b422c;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #f4c27a;
+        }
+
+        /* Hero section */
+        .hero {
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+            color: white;
+            padding: 110px 20px;
+        }
+
+        .hero h2 {
+            font-size: 42px;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 18px;
+        }
+
+        /* Common section */
+        section {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        section h2 {
+            color: #6b422c;
+            margin-bottom: 25px;
+            font-size: 30px;
+        }
+
+        /* Menu */
+        .menu-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 25px;
+        }
+
+        .menu-card {
+            background-color: white;
+            width: 270px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px #e5d5c8;
+        }
+
+        .menu-card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .menu-card h3 {
+            margin: 15px;
+        }
+
+        .menu-card p {
+            margin: 10px;
+        }
+
+        .price {
+            color: #a0522d;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .chefs {
+            background-color: #f3e6d8;
+        }
+
+        .chef-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 25px;
+        }
+
+        .chef-card {
+            width: 250px;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+
+        .chef-card h3 {
+            margin: 15px;
+        }
+
+
+        .testimonial {
+            background-color: #6b422c;
+            color: white;
+        }
+
+        .testimonial h2 {
+            color: white;
+        }
+
+        .review {
+            max-width: 600px;
+            margin: 20px auto;
+            background-color: #81583f;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        .hours {
+            background-color: #f3e6d8;
+        }
+
+        .hours p {
+            margin: 12px;
+        }
+
+        form {
+            max-width: 450px;
+            margin: auto;
+            background-color: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px #e5d5c8;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 15px;
+            font-family: Arial, sans-serif;
+        }
+
+        button {
+            background-color: #6b422c;
+            color: white;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #a0522d;
+        }
+
+        footer {
+            background-color: #3b2a20;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        footer p {
+            margin: 8px;
+        }
+
+    
+     
+            nav a {
+                display: inline-block;
+                margin: 8px;
+            }
+
+            .hero h2 {
+                font-size: 28px;
+            }
+
+            .menu-card {
+                width: 90%;
+            }
+
+            .chef-card {
+                width: 90%;
+            }
+        
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Food Haven</h1>
+        <p>Restaurant & Cafe</p>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#menu">Menu</a>
+        <a href="#chefs">Our Chefs</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#reservation">Reservation</a>
+    </nav>
+
+
+    <section class="hero" id="home">
+        <h2>Welcome to Food Haven</h2>
+        <p>Delicious food, warm ambience and unforgettable moments.</p>
+    </section>
+
+    <section id="menu">
+        <h2>Our Special Menu</h2>
+
+        <div class="menu-container">
+
+            <div class="menu-card">
+                <h3>Italian Pizza</h3>
+                <p>Freshly baked pizza with cheese and vegetables.</p>
+                <p class="price">₹299</p>
+            </div>
+
+            <div class="menu-card">
+                <h3>Classic Burger</h3>
+                <p>Delicious burger with fresh vegetables and sauce.</p>
+                <p class="price">₹199</p>
+            </div>
+
+            <div class="menu-container">
+                     alt="Pasta">
+                <h3>Creamy Pasta</h3>
+                <p>Rich and creamy pasta with herbs and cheese.</p>
+                <p class="price">₹249</p>
+            </div>
+
+            <div class="menu-card">
+                <h3>Hot Coffee</h3>
+                <p>Freshly brewed coffee with a rich aroma.</p>
+                <p class="price">₹99</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="chefs" id="chefs">
+        <h2>Meet Our Chefs</h2>
+
+        <div class="chef-container">
+
+            <div class="chef-card">
+                <h3>Chef Rahul</h3>
+                <p>Head Chef</p>
+                <p>Specialist in Italian and continental dishes.</p>
+            </div>
+
+            <div class="chef-card">
+                <h3>Chef Priya</h3>
+                <p>Pastry Chef</p>
+                <p>Expert in desserts, cakes and bakery items.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="testimonial" id="reviews">
+        <h2>Customer Reviews</h2>
+
+        <div class="review">
+            <p>"The food was delicious and the atmosphere was wonderful!"</p>
+            <p><strong>- Customer A</strong></p>
+        </div>
+
+        <div class="review">
+            <p>"A great place to enjoy coffee and spend time with friends."</p>
+            <p><strong>- Customer B</strong></p>
+        </div>
+    </section>
+
+    <section class="hours">
+        <h2>Opening Hours</h2>
+        <p>Monday - Friday: 10:00 AM - 10:00 PM</p>
+        <p>Saturday - Sunday: 9:00 AM - 11:00 PM</p>
+    </section>
+
+    <section id="reservation">
+        <h2>Reserve Your Table</h2>
+
+        <form action="#" method="post">
+
+            <input type="text" name="name"
+                   placeholder="SHAMEEM" required>
+
+            <input type="email" name="email"
+                   placeholder="shameem1234@gmail.com" required>
+
+            <input type="tel" name="phone"
+                   placeholder="9876543210" required>
+
+            <input type="date" name="date" required>
+
+            <input type="time" name="time" required>
+
+            <select name="guests" required>
+                <option value="">Number of Guests</option>
+                <option value="1">1 Person</option>
+                <option value="2">2 People</option>
+                <option value="3">3 People</option>
+                <option value="4">4 People</option>
+                <option value="5">5 People</option>
+                <option value="6">6 People</option>
+            </select>
+
+            <textarea name="message" rows="3"
+                      placeholder="Special requests"></textarea>
+
+            <button type="submit">Book a Table</button>
+
+        </form>
+    </section>
+
+    <section>
+        <h2>Visit Our Restaurant</h2>
+        <p>Food Haven Restaurant, Main Road, Vijayawada</p>
+        <p>Email: foodhaven@example.com</p>
+        <p>Phone: 9876543210</p>
+    </section>
+
+    <footer>
+        <p>Food Haven Restaurant & Cafe</p>
+        <p>&copy; 2026 Food Haven. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>

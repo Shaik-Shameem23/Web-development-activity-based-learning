@@ -1,0 +1,305 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SaraTravels</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f9ff;
+            color: #333;
+        }
+
+        header {
+            background-color: #075985;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #0e7490;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #facc15;
+        }
+
+        .hero {
+            background-image: linear-gradient(
+                rgba(0, 0, 0, 0.4),
+                rgba(0, 0, 0, 0.4)
+            ),
+            url("https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1500&q=80");
+
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        .hero h2 {
+            font-size: 40px;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 18px;
+        }
+
+        .packages {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .packages h2 {
+            color: #075985;
+            margin-bottom: 30px;
+        }
+
+        .destination-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 25px;
+        }
+
+        .destination {
+            background-color: white;
+            width: 280px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px #cbd5e1;
+            transition: transform 0.3s;
+        }
+
+        .destination:hover {
+            transform: translateY(-5px);
+        }
+
+        .destination img {
+            width: 100%;
+            height: 190px;
+        }
+
+        .destination h3 {
+            color: #075985;
+            margin: 15px;
+        }
+
+        .destination p {
+            margin: 10px;
+            line-height: 1.5;
+        }
+
+        .price {
+            color: #e11d48;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .itinerary {
+            background-color: #e0f2fe;
+            padding: 35px 20px;
+            text-align: center;
+        }
+
+        .itinerary h2 {
+            color: #075985;
+            margin-bottom: 20px;
+        }
+
+        .itinerary p {
+            margin: 12px;
+        }
+
+        .inquiry {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .inquiry h2 {
+            color: #075985;
+            margin-bottom: 20px;
+        }
+
+        form {
+            background-color: white;
+            max-width: 450px;
+            margin: auto;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px #cbd5e1;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 15px;
+        }
+
+        button {
+            background-color: #075985;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #0e7490;
+        }
+
+        footer {
+            background-color: #075985;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+            nav a {
+                display: inline-block;
+                margin: 8px;
+            }
+
+            .hero h2 {
+                font-size: 28px;
+            }
+
+            .destination {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Sara Travels</h1>
+        <p>Explore the World with Us!</p>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#packages">Packages</a>
+        <a href="#itinerary">Itinerary</a>
+        <a href="#inquiry">Contact</a>
+    </nav>
+
+    <section class="hero" id="home">
+        <h2>Discover Your Next Adventure</h2>
+        <p>Beautiful destinations, exciting experiences and unforgettable memories.</p>
+    </section>
+
+    <section class="packages" id="packages">
+        <h2>Popular Holiday Packages</h2>
+
+        <div class="destination-container">
+
+            <div class="destination">
+                <img src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9R_SC_hAvSQBkRNfZ3F7Xw_4MrYYCn0dJ3m2B0P43AqWvOm96VGcBPg53OnaxAakpg9qErF9lbyTcBw70dv6QDZd4MohdaznhY_9qVawsK4ZLcaUmRTe7uTYz4xnFiXpm4yyrKWQw=s1360-w1360-h1020-rw" alt="Goa Beach">
+
+                <h3>Goa Beach Tour</h3>
+                <p>Enjoy beautiful beaches and exciting sightseeing.</p>
+                <p><strong>Duration:</strong> 3 Days / 2 Nights</p>
+                <p class="price">₹8,999</p>
+                <p><strong>Itinerary:</strong> Beaches, Fort Aguada and local markets.</p>
+            </div>
+
+            <div class="destination">
+                <img src="https://lh3.googleusercontent.com/grass-cs/AABkmLdGZ6lm7sa_27khW1Zf2Kctp-xkLYsPJRGdz0CKUk40wGjjVlqckyst_IpjamfQCljj6YzYVyJQEaK4PvLOaeuvEYdNR2md2KW0EryPrSI8oDW8frTR3AWmahPh8D2v_yM_8Oon=w289-h156-n-k-no"
+                     alt="Manali Mountains">
+
+                <h3>Manali Adventure</h3>
+                <p>Experience mountain views and peaceful valleys.</p>
+                <p><strong>Duration:</strong> 5 Days / 4 Nights</p>
+                <p class="price">₹14,999</p>
+                <p><strong>Itinerary:</strong> Solang Valley, Hadimba Temple and sightseeing.</p>
+            </div>
+
+            <div class="destination">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKSaRE0SvI8I1djtwThE66SYiTf45y5pJd8ne0yofvtg&s=10"
+                     alt="Kerala Backwaters">
+
+                <h3>Kerala Holiday</h3>
+                <p>Relax among green hills and beautiful backwaters.</p>
+                <p><strong>Duration:</strong> 4 Days / 3 Nights</p>
+                <p class="price">₹12,499</p>
+                <p><strong>Itinerary:</strong> Munnar, tea gardens and Alleppey.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="itinerary" id="itinerary">
+        <h2>Sample Goa Itinerary</h2>
+
+        <p><strong>Day 1:</strong> Arrival in Goa and beach sightseeing.</p>
+        <p><strong>Day 2:</strong> Visit Fort Aguada, Calangute Beach and local markets.</p>
+        <p><strong>Day 3:</strong> Breakfast, shopping and departure.</p>
+    </section>
+
+    <section class="inquiry" id="inquiry">
+        <h2>Plan Your Trip</h2>
+
+        <form action="#" method="post">
+
+            <input type="text" name="name"
+                   placeholder="Enter your name" required>
+
+            <input type="email" name="email"
+                   placeholder="Enter your email" required>
+
+            <select name="destination" required>
+                <option value="">Select Destination</option>
+                <option value="Goa">Goa</option>
+                <option value="Manali">Manali</option>
+                <option value="Kerala">Kerala</option>
+            </select>
+
+            <input type="date" name="travel-date" required>
+
+            <input type="number" name="people"
+                   placeholder="Number of travelers" min="1" required>
+
+            <textarea name="message" rows="4"
+                      placeholder="Your travel requirements"></textarea>
+
+            <button type="submit">Send Inquiry</button>
+
+        </form>
+    </section>
+
+    <footer>
+        <p>Sara Travels | Vijayawada, India</p>
+        <p>Email: saratravels@example.com</p>
+        <p>Phone: 9876543210</p>
+        <p>&copy; 2026 Sara Travels. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
